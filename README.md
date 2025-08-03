@@ -6,6 +6,14 @@
   	</p>
 </div>
 
+A repository of lab‑style electronic circuits modeled in **NI Multisim** for simulation-based learning.  
+Includes:
+- DC/AC/transient circuits  
+- Diode, BJT/FET, Op‑Amp, and digital logic builds  
+- Schematic files, simulation screenshots, and experiment documentation  
+
+Ideal for ECE students, instructors, and electronics enthusiasts looking to bridge theory and practical simulation.
+
 ## Installation
 
 1. Buy or download the trial version of [NI Multisim](https://www.ni.com/en-us/support/downloads/software-products/download.multisim.html) (At least version 14.2)
