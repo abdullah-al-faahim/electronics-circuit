@@ -11,8 +11,8 @@
 1. Buy or download the trial version of [NI Multisim](https://www.ni.com/en-us/support/downloads/software-products/download.multisim.html) (At least version 14.2)
 3. Clone the Repo
    ```sh
-   git clone https://github.com/DarioArzaba/MultisimCircuitDesign.git
-   cd MultisimCircuitDesign
+   git clone https://github.com/abdullah-al-faahim/electronics-circuit.git
+   cd electronics-circuit
    ```
 4. Open, edit and run any of the `ms14` files provided.
 
