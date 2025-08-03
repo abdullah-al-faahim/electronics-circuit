@@ -26,4 +26,4 @@ Distributed under the [MIT License](https://mit-license.org/).
 
 ## Contact
 
-Dario Arzaba - dario.arzaba@gmail.com
+Abdullah Al Fahim - alfahim604@yahoo.com
