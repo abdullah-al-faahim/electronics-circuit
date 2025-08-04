@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-	<h3 align="center">Multisim Design</h3>
+	<h2 align="center">Multisim Design</h2>
 	<p align="center">
     	NI Multisim project files used to study and design electronic circuits.
   	</p>
