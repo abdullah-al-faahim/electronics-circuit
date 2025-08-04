@@ -4,6 +4,12 @@
 	<p align="center">
     	NI Multisim project files used to study and design electronic circuits.
   	</p>
+	<a href="https://github.com/abdullah-al-faahim/electronics-circuit/archive/refs/heads/main.zip" target="_blank">
+        <img src="https://img.shields.io/badge/Download--red?style=for-the-badge&logo=github" alt="Download Circuit Models">
+     	 </a>
+	
+
+ 
 </div>
 
 
