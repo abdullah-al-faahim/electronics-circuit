@@ -28,6 +28,10 @@ Ideal for ECE students, instructors, and electronics enthusiasts looking to brid
 <div align="center"> <p> Example of Logic Gate Equations </p> </div>
 <img src="S1.png">
 
+</br>
+<div align="center"> <p> Example of BCD Segment Display </p> </div>
+<img src="S2.png">
+
 ## License
 
 Distributed under the [MIT License](https://mit-license.org/).
