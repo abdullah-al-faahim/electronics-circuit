@@ -1,47 +1,157 @@
-<br />
 <div align="center">
-	<h1 align="center">Multisim Design</h1>
-	<p align="center">
-    	NI Multisim project files used to study and design electronic circuits.
-  	</p>
-	<a href="https://github.com/abdullah-al-faahim/electronics-circuit/archive/refs/heads/main.zip" target="_blank">
-        <img src="https://img.shields.io/badge/Download--red?style=for-the-badge&logo=github" alt="Download Circuit Models">
-	</a>
+
+<h1>⚡ Electronics Circuit Lab</h1>
+
+<p><b>183 ready-to-simulate NI Multisim projects</b> covering circuit theory, analog electronics,<br/>digital logic and full university lab coursework.</p>
+
+<p>
+  <img src="https://img.shields.io/badge/NI%20Multisim-14.2%2B-0063a3?style=flat-square" alt="NI Multisim 14.2+">
+  <img src="https://img.shields.io/badge/files-.ms13%20%7C%20.ms14-555?style=flat-square" alt="File formats">
+  <img src="https://img.shields.io/badge/circuits-183-success?style=flat-square" alt="183 circuits">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
+</p>
+
+<a href="https://github.com/abdullah-al-faahim/electronics-circuit/archive/refs/heads/main.zip">
+  <img src="assets/buttons/download-all.svg" alt="Download all circuits" height="72">
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest/download/fundamentals.zip"><img src="assets/buttons/download-fundamentals.svg" alt="Download Circuit Fundamentals" height="56"></a>
+<a href="https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest/download/analog.zip"><img src="assets/buttons/download-analog.svg" alt="Download Analog Electronics" height="56"></a>
+<br/>
+<a href="https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest/download/digital.zip"><img src="assets/buttons/download-digital.svg" alt="Download Digital Logic" height="56"></a>
+<a href="https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest/download/coursework.zip"><img src="assets/buttons/download-coursework.svg" alt="Download Lab and Coursework" height="56"></a>
+
+<br/><br/>
+
+<a href="#-getting-started">Getting started</a> ·
+<a href="#-whats-inside">What's inside</a> ·
+<a href="#-preview">Preview</a> ·
+<a href="#-repository-layout">Layout</a> ·
+<a href="#-contact">Contact</a>
+
 </div>
 
 ---
 
-A repository of lab‑style electronic circuits modeled in **NI Multisim** for simulation-based learning.  
-Includes:
-- DC/AC/transient circuits  
-- Diode, BJT/FET, Op‑Amp, and digital logic builds  
-- Schematic files, simulation screenshots, and experiment documentation
+## 🚀 Getting started
 
+<a href="https://www.ni.com/en-us/support/downloads/software-products/download.multisim.html">
+  <img src="assets/buttons/get-multisim.svg" alt="Get NI Multisim" height="56" align="right">
+</a>
 
-Ideal for ECE students, instructors, and electronics enthusiasts looking to bridge theory and practical simulation.
-
-## Installation
-
-1. Buy or download the trial version of [NI Multisim](https://www.ni.com/en-us/support/downloads/software-products/download.multisim.html) (At least version 14.2)
-3. Clone the Repo
+1. **Install NI Multisim 14.2 or newer.** The free trial works.
+2. **Get the circuits.** Use one of the download buttons above, or clone the repo:
    ```sh
    git clone https://github.com/abdullah-al-faahim/electronics-circuit.git
    cd electronics-circuit
    ```
-4. Open, edit and run any of the `ms14` files provided.
+3. **Open any `.ms13` / `.ms14` file** in Multisim and press <kbd>F5</kbd> (Run) to simulate.
 
-</br>
-<div align="center"> <p> Example of Logic Gate Equations </p> </div>
-<img src="S1.png">
+> [!TIP]
+> `.ms13` files were saved in Multisim 13 and open fine in 14.x. Multisim may offer to upgrade the file when you save it.
 
-</br>
-<div align="center"> <p> Example of BCD Segment Display </p> </div>
-<img src="S2.png">
+## 📦 What's inside
 
-## License
+<details open>
+<summary><b>🔵 01 · Circuit Fundamentals</b> (23 files) · <a href="circuits/01-fundamentals">browse</a></summary>
 
-Distributed under the [MIT License](https://mit-license.org/).
+| Topic | What you'll find |
+|---|---|
+| [`circuit-simplification`](circuits/01-fundamentals/circuit-simplification) | Series/parallel resistor network reduction |
+| [`circuit-with-labels`](circuits/01-fundamentals/circuit-with-labels) | A simple labelled schematic for beginners |
+| [`node-and-mesh-analysis`](circuits/01-fundamentals/node-and-mesh-analysis) | Nodal and mesh analysis, superposition, Thévenin, active power |
+| [`dc-operating-point`](circuits/01-fundamentals/dc-operating-point) | DC operating point analysis walkthrough |
+| [`dependent-current-source`](circuits/01-fundamentals/dependent-current-source) | Circuits driven by controlled current sources |
+| [`dependent-voltage-source`](circuits/01-fundamentals/dependent-voltage-source) | Three versions of controlled voltage source circuits |
+| [`ac-source-operations`](circuits/01-fundamentals/ac-source-operations) | AC source behaviour and measurement |
+| [`impedance`](circuits/01-fundamentals/impedance) | Common impedance configurations, with MATLAB cross-checks |
+| [`steady-state-response`](circuits/01-fundamentals/steady-state-response) | RL circuit transient and steady-state response |
+| [`transformers`](circuits/01-fundamentals/transformers) | Basic transformer circuit |
 
-## Contact
+</details>
 
-Abdullah Al Fahim - alfahim604@yahoo.com
+<details>
+<summary><b>🟠 02 · Analog Electronics</b> (54 files) · <a href="circuits/02-analog">browse</a></summary>
+
+| Topic | What you'll find |
+|---|---|
+| [`diode-behaviour`](circuits/02-analog/diode-behaviour) | Diode circuit behaviour and characteristics |
+| [`inverting-opamp`](circuits/02-analog/inverting-opamp) | Inverting op-amp configurations and ideal op-amp exercises |
+| [`opamp-oscillators-and-amplifiers`](circuits/02-analog/opamp-oscillators-and-amplifiers) | 741 amplifiers, integrator/differentiator, comparator, astable/monostable multivibrators, RC phase-shift and Wien bridge oscillators, square/triangle/sawtooth generators, RC-coupled amplifiers |
+| [`amplifiers-and-filters`](circuits/02-analog/amplifiers-and-filters) | CE amplifier, FET, low-pass filters, Colpitts oscillator, bandwidth, transistor characteristics, plus the LTC lab sessions |
+
+</details>
+
+<details>
+<summary><b>🟢 03 · Digital Logic</b> (15 files) · <a href="circuits/03-digital">browse</a></summary>
+
+| Topic | What you'll find |
+|---|---|
+| [`boolean-operations`](circuits/03-digital/boolean-operations) | Every basic Boolean operation in one sheet |
+| [`logic-gate-equations`](circuits/03-digital/logic-gate-equations) | Turning Boolean equations into gate circuits |
+| [`transistor-logic`](circuits/03-digital/transistor-logic) | Logic gates built from discrete transistors |
+| [`flip-flops`](circuits/03-digital/flip-flops) | SR/JK flip-flop designs, multi-switch variants |
+| [`debounce-jk-flip-flop`](circuits/03-digital/debounce-jk-flip-flop) | Two-switch debounce sequence with JK flip-flops |
+| [`bcd-seven-segment`](circuits/03-digital/bcd-seven-segment) | BCD to seven-segment display driver |
+| [`555-one-shot-clock`](circuits/03-digital/555-one-shot-clock) | 555 timer one-shot clock configuration |
+
+</details>
+
+<details>
+<summary><b>🟣 04 · Lab &amp; Coursework</b> (91 files) · <a href="circuits/04-coursework">browse</a></summary>
+
+| Topic | What you'll find |
+|---|---|
+| [`electronics-1-2-lab`](circuits/04-coursework/electronics-1-2-lab) | Full Electronics I &amp; II lab set: RLC series/parallel networks, passive and active filters, BJT/JFET/MOSFET characteristics, op-amp 741 models, controlled sources, attenuator pads, parameter sweeps, two-way switching |
+| [`microelectronics-textbook-problems`](circuits/04-coursework/microelectronics-textbook-problems) | Worked microelectronics textbook problems 38–70 |
+
+</details>
+
+## 🖼 Preview
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/screenshots/logic-gate-equations.png" alt="Logic gate equations in Multisim"><br/>
+      <sub><b>Logic Gate Equations</b> · <code>03-digital/logic-gate-equations</code></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/screenshots/bcd-seven-segment.png" alt="BCD seven-segment display in Multisim"><br/>
+      <sub><b>BCD Seven-Segment Display</b> · <code>03-digital/bcd-seven-segment</code></sub>
+    </td>
+  </tr>
+</table>
+
+## 🗂 Repository layout
+
+```text
+electronics-circuit/
+├── circuits/
+│   ├── 01-fundamentals/     # circuit theory: nodal/mesh, sources, impedance, AC/DC
+│   ├── 02-analog/           # diodes, BJTs, FETs, op-amps, oscillators, filters
+│   ├── 03-digital/          # gates, Boolean algebra, flip-flops, displays, 555
+│   └── 04-coursework/       # Electronics I & II lab + textbook problems
+├── assets/
+│   ├── buttons/             # custom README download buttons (SVG, from scripts/make_buttons.py)
+│   └── screenshots/
+├── scripts/                 # button generator
+└── .github/workflows/       # builds the per-category download zips
+```
+
+The category download buttons point at the [`downloads` release](https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest). It is rebuilt automatically by [`package-downloads.yml`](.github/workflows/package-downloads.yml) whenever something under `circuits/` changes on `main`.
+
+## 🤝 Contributing
+
+Found a bug in a circuit or have one to add? Open an issue or a pull request. Drop new files into the category folder that fits, and use lowercase-hyphenated folder names.
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
+
+## 📬 Contact
+
+**Abdullah Al Fahim** · [alfahim604@yahoo.com](mailto:alfahim604@yahoo.com) · [@abdullah-al-faahim](https://github.com/abdullah-al-faahim)
+
+<div align="center"><sub>If this repo helped with your lab, consider giving it a ⭐</sub></div>

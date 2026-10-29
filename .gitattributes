@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Multisim projects are binary
+*.ms13 binary
+*.ms14 binary
+*.png binary

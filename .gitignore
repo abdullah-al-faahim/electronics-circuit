@@ -1,0 +1,12 @@
+# Multisim auto-backups and lock files
+*(Security copy)
+*.ms14.lock
+*.ms13.lock
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local build output
+dist/

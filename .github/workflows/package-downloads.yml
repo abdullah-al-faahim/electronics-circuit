@@ -1,0 +1,41 @@
+# Builds one zip per circuit category and publishes them on the "downloads"
+# release, so the README buttons can link to
+# releases/latest/download/<category>.zip
+name: Package downloads
+
+on:
+  push:
+    branches: [main]
+    paths: ["circuits/**", ".github/workflows/package-downloads.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip each category
+        run: |
+          mkdir dist
+          cd circuits
+          for dir in */; do
+            name="${dir%/}"
+            zip -rq "../dist/${name#*-}.zip" "$name"   # 01-fundamentals -> fundamentals.zip
+          done
+          cd ..
+          zip -rq dist/all-circuits.zip circuits LICENSE
+          ls -lh dist
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete downloads --yes --cleanup-tag || true
+          gh release create downloads dist/*.zip \
+            --title "Circuit downloads" \
+            --notes "Auto-built from \`${GITHUB_SHA::7}\`. Each zip holds one category of NI Multisim (.ms13 / .ms14) projects." \
+            --latest
