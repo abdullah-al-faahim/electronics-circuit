@@ -116,13 +116,13 @@
 ```text
 electronics-circuit/
 ├── circuits/
-│   ├── 01-fundamentals/  # circuit theory
-│   ├── 02-analog/        # diodes, op-amps
-│   ├── 03-digital/       # logic, flip-flops
-│   └── 04-coursework/    # lab + textbook
-├── assets/               # cover, buttons, screenshots
-├── scripts/              # asset generators
-└── .github/workflows/    # download zips
+│   ├── 01-fundamentals/
+│   ├── 02-analog/
+│   ├── 03-digital/
+│   └── 04-coursework/
+├── assets/
+├── scripts/
+└── .github/workflows/
 ```
 
 The category download buttons point at the [`downloads` release](https://github.com/abdullah-al-faahim/electronics-circuit/releases/latest). It is rebuilt automatically by [`package-downloads.yml`](.github/workflows/package-downloads.yml) whenever something under `circuits/` changes on `main`.
